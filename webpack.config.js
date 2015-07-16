@@ -2,7 +2,6 @@
 
 var path = require('path'),
     webpack = require('webpack'),
-    glob = require('glob'),
     ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {

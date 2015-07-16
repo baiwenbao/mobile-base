@@ -1,6 +1,29 @@
 @function f($x) {
     @return $x / 40 * 1rem;
 }
+[data-dpr="1"] div {
+    font-size: 12px;
+}
+[data-dpr="2"] div {
+    font-size: 24px;
+}
+[data-dpr="3"] div {
+    font-size: 36px;
+}
+@mixin font($x) {
+    [data-dpr="1"] & {
+        font-size: $x / 2 * 1px;
+    }
+    [data-dpr="1.5"] & {
+        font-size: $x / 2 * 1.5px;
+    }
+    [data-dpr="2"] & {
+        font-size: $x / 2 * 2px
+    }
+    [data-dpr="3"] & {
+        font-size: $x / 2 * 3px
+    }
+}
 body,
 div,
 dl,
@@ -94,27 +117,4 @@ input {
 }
 @mixin txt($l) {
     text-align: $l;
-}
-[data-dpr="1"] div {
-    font-size: 12px;
-}
-[data-dpr="2"] div {
-    font-size: 24px;
-}
-[data-dpr="3"] div {
-    font-size: 36px;
-}
-@mixin font($x) {
-    [data-dpr="1"] & {
-        font-size: $x/2 *1px;
-    }
-    [data-dpr="1.5"] & {
-        font-size: $x/2 *1.5px;
-    }
-    [data-dpr="2"] & {
-        font-size: $x/2 * 2px
-    }
-    [data-dpr="3"] & {
-        font-size: $x/2 * 3px
-    }
 }
