@@ -1,0 +1,213 @@
+@import "base";
+[class*=icon] {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: f(8);
+}
+.text {
+    vertical-align: middle
+}
+body {
+    background: #f0f0f0;
+}
+.baseInfo {
+    color: #fff;
+    @extend %clearfix;
+    background: #75c55a;
+    padding: f(38) 0;
+    .pic {
+        float: left;
+        width: f(142);
+        height: f(142);
+        border: f(5) rgba(255, 255, 255, .3) solid;
+        border-radius: 50%;
+        margin-left: f(44);
+        overflow: hidden
+    }
+    .main {
+        float: left;
+        margin-left: f(40);
+        width: f(385)
+    }
+    .username {
+        @include font(32)
+    }
+    .icon－praise {
+        width: f(26);
+        height: f(26);
+        background: url(../images/icon/1.png) 0 0 / 100% 100% no-repeat;
+    }
+    .upper {
+        border-bottom: f(2) dashed #acdc9c;
+        height: f(50);
+        line-height: f(32);
+        .text {
+            @include font(26)
+        }
+    }
+    .classname {
+        margin: f(20) 0 f(15)
+    }
+    .classname,
+    .starttime {
+        * {
+            vertical-align: middle
+        }
+        @include font(24);
+        .content {
+            @extend %textoverflow;
+            display: inline-block;
+            width: f(265);
+        }
+    }
+}
+.state {
+    padding: f(30) f(16) f(28);
+    background: #fff;
+    height: f(116);
+    .left {
+        text-align: center;
+        float: left;
+        width: 50%;
+        .upper {
+            color: #68c04a;
+            @include font(26);
+        }
+        .down {
+            @include font(22);
+            color: #c2c2c2;
+            margin-top: f(20);
+        }
+    }
+    .right {
+        @extend .left;
+        position: relative;
+        &:before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: f(1);
+            height: f(36);
+            top: 50%;
+            left: 0;
+            margin-top: f(-18);
+            background: #dfdfdf;
+        }
+    }
+}
+.activity {
+    .head {
+        background: #77c65c;
+    }
+    .item {
+        width: 50%;
+        height: f(135);
+        border: solid #e7e7e7;
+        border-width: 0 f(1) f(1) 0;
+        padding: f(32) 0 f(32) f(53);
+        float: left;
+    }
+    .item:nth-child(even) {
+        border-right: none;
+    }
+    .item:nth-child(3),
+    .item:nth-child(4) {
+        border-bottom: none;
+    }
+    .upper {
+        @include font(28);
+        color: #68c04a;
+    }
+    .down {
+        color: #c2c2c2;
+        @include font(22);
+        margin-top: f(20);
+    }
+    [class*=icon] {
+        width: f(70);
+        height: f(70);
+        border-radius: 50%;
+        margin-right: f(30);
+    }
+    .icon-calendar {
+        background: #ffcd49 url(../images/icon/2.png) center center / f(39) f(34) no-repeat;
+    }
+    .icon-diary {
+        background: #ff9d3e url(../images/icon/3.png) center center / f(38) f(42) no-repeat;
+    }
+    .icon-zan {
+        background: #82ceef url(../images/icon/4.png) center center / f(37) f(37) no-repeat;
+    }
+    .icon-homework {
+        background: #7fd262 url(../images/icon/5.png) center center / f(36) f(36) no-repeat;
+    }
+}
+.section {
+    margin: f(16);
+    border-radius: f(5);
+    overflow: hidden;
+    background: #fff;
+    .head {
+        text-align: center;
+        @include font(32);
+        line-height: f(77);
+        color: #fff;
+    }
+    box-shadow: 0 1px 2px #ddd;
+    .foot {
+        text-align: center;
+        @include font(22);
+        color: #a7a7a7;
+        line-height: f(50);
+        background: #fafafa;
+    }
+}
+.compare {
+    .head {
+        background: #ffcd49;
+    }
+    .body {
+        margin-top: f(34);
+        //        height: f(655);
+        background: url(../images/icon/12.png) center 0 / auto 100% no-repeat;
+        @extend %clearfix;
+    }
+    .left,
+    .right {
+        width: 50%;
+        float: left;
+        text-align: center;
+    }
+    .item {
+        margin-bottom: f(36);
+        label {
+            @include font(22);
+            color: #a7a7a7;
+            margin-bottom: f(21);
+            display: inline-block
+        }
+        p {
+            @include font(42);
+            color: #ff7e00;
+        }
+    }
+    .right {
+        p {
+            color: #68c04a;
+        }
+    }
+    .pic {
+        width: f(100);
+        height: f(100);
+        margin-bottom: f(12);
+        border-radius: 50%;
+        overflow: hidden
+    }
+    .name {
+        margin-bottom: f(24);
+        p {
+            @include font(26);
+            color: #494949;
+        }
+    }
+}

@@ -1,0 +1,120 @@
+@function f($x) {
+    @return $x / 40 * 1rem;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0
+}
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+    font-family: arial, sans-serif;
+    user-select: none;
+    text-size-adjust: 100%;
+    background: #f0efed;
+    font-size: f(12);
+    color: #545454;
+    line-height: 1
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
+img {
+    vertical-align: middle
+}
+input {
+    appearance: none;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+%textoverflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+%fl,
+.fl {
+    float: left;
+}
+%fr,
+.fr {
+    float: right;
+}
+%clearfix,
+.clearfix {
+    &:after {
+        clear: both;
+        display: block;
+        line-break: 0;
+        content: '';
+    }
+}
+@mixin txt($l) {
+    text-align: $l;
+}
+[data-dpr="1"] div {
+    font-size: 12px;
+}
+[data-dpr="2"] div {
+    font-size: 24px;
+}
+[data-dpr="3"] div {
+    font-size: 36px;
+}
+@mixin font($x) {
+    [data-dpr="1"] & {
+        font-size: $x/2 *1px;
+    }
+    [data-dpr="1.5"] & {
+        font-size: $x/2 *1.5px;
+    }
+    [data-dpr="2"] & {
+        font-size: $x/2 * 2px
+    }
+    [data-dpr="3"] & {
+        font-size: $x/2 * 3px
+    }
+}

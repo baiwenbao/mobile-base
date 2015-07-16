@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>rank</title>
+    <meta name="viewport" content="initial-scale=.5,minimum-scale=.5,maximum-scale=.5,user-scalable=no">
+    <link rel="stylesheet" href="/dist/main.bundle.css">
+    <script src="/dist/main.bundle.js"></script>
+</head>
+
+<body id="body">
+    <script type="text/template" charset="utf-8" id="template">
+        {{if(it && it.length>0){}}
+        <div class="baseInfo">
+            <div class="pic">
+                <img src="{{=it[0].pic}}" width="100%" height="100%">
+            </div>
+            <div class="main">
+                <div class="upper clearfix">
+                    <span class="fl username">{{=it[0].name}}</span>
+                    <span class="fr"><i class="icon－praise"></i><span class="text">{{=it[0].getzan}}</span></span>
+                </div>
+                <div class="classname">
+                    <label for="">所在班级：</label><span class="content">{{=it[0].classname}}</span></div>
+
+                <div class="starttime">
+                    <label for="">进班时间：</label><span class="content">{{=it[0].entertime }}</span></div>
+            </div>
+        </div>
+
+        <div class="state">
+            <div class="left">
+                <div class="upper">{{=it[0].days}}天</div>
+                <div class="down">已学习</div>
+            </div>
+            <div class="right">
+                <div class="upper">{{=it[0].pass}}</div>
+                <div class="down">已超过同学</div>
+            </div>
+        </div>
+
+        <section class="activity section">
+            <div class="head">学习活跃度</div>
+            <div class="body clearfix">
+                <div class="item">
+                    <div class="fl">
+                        <i class="icon-calendar"></i>
+                    </div>
+                    <div class="fl">
+                        <div class="upper">{{=it[0].days}}天</div>
+                        <div class="down">已进班</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="fl">
+                        <i class="icon-diary"></i>
+                    </div>
+                    <div class="fl">
+                        <div class="upper">{{=it[0].notes}}篇</div>
+                        <div class="down">笔记</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="fl">
+                        <i class="icon-zan"></i>
+                    </div>
+                    <div class="fl">
+                        <div class="upper">{{=it[0].outputzan}}次</div>
+                        <div class="down">点赞</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="fl">
+                        <i class="icon-homework"></i>
+                    </div>
+                    <div class="fl">
+                        <div class="upper">{{=it[0].homework}}次</div>
+                        <div class="down">作业回复</div>
+                    </div>
+                </div>
+            </div>
+            <div class="foot">
+                经常在{{=it[0].learntime}}学习
+            </div>
+        </section>
+
+
+        <section class="section compare">
+            <div class="head">学习动态对比</div>
+            <div class="body">
+                <div class="left">
+                    <div class="item name">
+                        <img class="pic" src="{{=it[0].pic}}" alt="" width="100%" height="100%" />
+                        <p>{{=it[0].name}}</p>
+                    </div>
+                    <div class="item">
+                        <label for="">学习课数</label>
+                        <p>{{=it[0].lessons}}</p>
+                    </div>
+                    <div class="item correctrate">
+                        <label for="">平均正确率</label>
+                        <p>{{=it[0].correctrate}}</p>
+                    </div>
+                    <div class="item learntime">
+                        <label for="">学习时长</label>
+                        <p>{{=it[0].days}}</p>
+                    </div>
+                    <div class="item">
+                        <label for="">回复作业数</label>
+                        <p>{{=it[0].homework}}</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="item name">
+                        <img class="pic" src="{{=it[1].pic}}" alt="" width="100%" height="100%" />
+                        <p>{{=it[1].name}}</p>
+                    </div>
+                    <div class="item">
+                        <label for="">学习课数</label>
+                        <p>{{=it[1].lessons}}</p>
+                    </div>
+                    <div class="item correctrate">
+                        <label for="">平均正确率</label>
+                        <p>{{=it[1].correctrate}}</p>
+                    </div>
+                    <div class="item learntime">
+                        <label for="">学习时长</label>
+                        <p>{{=it[1].days}}</p>
+                    </div>
+                    <div class="item">
+                        <label for="">回复作业数</label>
+                        <p>{{=it[1].homework}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="foot">*数据跟新时间为7月8日00:00:00</div>
+        </section>
+        {{}}}
+    </script>
+</body>
+
+</html>
