@@ -1,30 +1,29 @@
 {
-    "name": "mobile-page",
-    "version": "1.0.0",
-    "description": "移动端常用资源整理",
-    "main": "entry.js",
-    "dependencies": {
-
-    },
-    "devDependencies": {
-        "dot": "^1.0.3",
-        "fs": "^0.0.2",
-        "css-loader": "^0.15.2",
-        "file-loader": "^0.8.4",
-        "autoprefixer-loader": "^2.0.0",
-        "jquery": "^2.1.4",
-        "extract-text-webpack-plugin": "^0.8.2",
-        "style-loader": "^0.12.3",
-        "sass-loader": "^1.0.2",
-        "url-loader": "^0.5.6",
-        "node-libs-browser": "^0.5.2",
-        "node-sass": "^3.2.0",
-        "webpack-dev-server": "^1.10.1",
-        "webpack": "^1.10.1"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "",
-    "license": "ISC"
+  "name": "mobile-page",
+  "version": "1.0.0",
+  "description": "移动端常用资源整理",
+  "main": "entry.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer-loader": "^2.0.0",
+    "css-loader": "^0.15.2",
+    "dot": "^1.0.3",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
+    "fs": "^0.0.2",
+    "jquery": "^2.1.4",
+    "node-libs-browser": "^0.5.2",
+    "node-sass": "^3.2.0",
+    "sass-loader": "^1.0.2",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.10.1",
+    "webpack-dev-server": "^1.10.1",
+    "zepto": "0.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }

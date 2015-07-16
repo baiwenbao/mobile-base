@@ -2,7 +2,8 @@
 
 var path = require('path'),
     webpack = require('webpack'),
-    ExtractTextPlugin = require('extract-text-webpack-plugin');
+    ExtractTextPlugin = require('extract-text-webpack-plugin'),
+    ProvidePlugin = require('webpack/lib/ProvidePlugin');
 
 module.exports = {
     devServer: {
@@ -11,8 +12,8 @@ module.exports = {
         hot: true,
         inline: true
     },
-
-    entry: './entry.js',
+    //    devtool: 'source-map',
+    entry: ['./node_modules/zepto/zepto.min.js', './entry.js'],
     output: {
         path: './dist',
         publicPath: '/dist/',
@@ -43,5 +44,9 @@ module.exports = {
             }
         }),
 		new webpack.HotModuleReplacementPlugin()
+//        new ProvidePlugin({
+            //            '$': 'zepto'
+            //        })
+
 	]
 }

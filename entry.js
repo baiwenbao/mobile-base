@@ -1,11 +1,11 @@
 require('./sass/home.scss');
 require('./js/base.js');
-var $ = require('jquery');
 
 window.onload = function () {
     var render = new Render();
     render.init();
 }
+
 
 var Render = function () {};
 Render.prototype = {
