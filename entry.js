@@ -7,8 +7,6 @@ window.onload = function () {
     render.init();
 }
 
-
-
 var Render = function () {};
 Render.prototype = {
     init: function () {
