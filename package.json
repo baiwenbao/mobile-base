@@ -11,7 +11,6 @@
     "extract-text-webpack-plugin": "^0.8.2",
     "file-loader": "^0.8.4",
     "fs": "^0.0.2",
-    "jquery": "^2.1.4",
     "node-libs-browser": "^0.5.2",
     "node-sass": "^3.2.0",
     "sass-loader": "^1.0.2",
