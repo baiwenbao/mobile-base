@@ -16,7 +16,7 @@
             maxwidth = 640;
         if (width / dpr > maxwidth) {
             width = maxwidth * dpr;
-            docEl.style.width = maxwidth * dpr + 'px';
+            docEl.style.width = width + 'px';
             docEl.style.margin = '0 auto';
         }
         var rem = width / 16;
