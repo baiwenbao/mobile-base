@@ -29,7 +29,7 @@
 
 .inlineCon {
     font-size: 0!important;
-    & .inlineBox {
+    & > .inlineBox {
         @include font(24);
         display: inline-block!important;
     }
