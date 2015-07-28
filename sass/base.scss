@@ -1,18 +1,27 @@
 @function f($x) {
     @return $x / 40 * 1rem;
 }
-//[data-dpr="1"] div {
-//    font-size: 12px;
-//}
-//[data-dpr="2"] div {
-//    font-size: 24px;
-//}
-//[data-dpr="3"] div {
-//    font-size: 36px;
-//}
+[data-dpr="1"] body {
+    font-size: 12px;
+}
+[data-dpr="1.25"] body {
+    font-size: 15px;
+}
+[data-dpr="1.5"] body {
+    font-size: 18px;
+}
+[data-dpr="2"] body {
+    font-size: 24px;
+}
+[data-dpr="3"] body {
+    font-size: 36px;
+}
 @mixin font($x) {
     [data-dpr="1"] & {
         font-size: $x / 2 * 1px;
+    }
+    [data-dpr="1.25"] & {
+        font-size: $x / 2 * 1.25px;
     }
     [data-dpr="1.5"] & {
         font-size: $x / 2 * 1.5px;
@@ -121,15 +130,12 @@ input {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-%fl,
 .fl {
     float: left;
 }
-%fr,
 .fr {
     float: right;
 }
-%clearfix,
 .clearfix {
     &:after {
         clear: both;
@@ -137,7 +143,4 @@ input {
         line-break: 0;
         content: '';
     }
-}
-@mixin txt($l) {
-    text-align: $l;
 }
