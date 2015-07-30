@@ -1,45 +1,31 @@
 @function f($x) {
-    @return $x / 40 * 1rem;
+    @return $x / 40 * 1rem; //按640的设计稿，统一宽度16rem;
 }
-[data-dpr="1"] body {
-    font-size: 12px;
-}
-[data-dpr="1.25"] body {
-    font-size: 15px;
-}
-[data-dpr="1.5"] body {
-    font-size: 18px;
-}
-[data-dpr="2"] body {
-    font-size: 24px;
-}
-[data-dpr="3"] body {
-    font-size: 36px;
-}
-@mixin font($x) {
-    [data-dpr="1"] & {
-        font-size: $x / 2 * 1px;
-    }
-    [data-dpr="1.25"] & {
-        font-size: $x / 2 * 1.25px;
-    }
-    [data-dpr="1.5"] & {
-        font-size: $x / 2 * 1.5px;
-    }
-    [data-dpr="2"] & {
-        font-size: $x / 2 * 2px
-    }
-    [data-dpr="3"] & {
-        font-size: $x / 2 * 3px
-    }
-}
+//@mixin font($x) {
+//    [data-dpr="1"] & {
+//        font-size: $x / 2 * 1px;
+//    }
+//    [data-dpr="1.25"] & {
+//        font-size: $x / 2 * 1.25px;
+//    }
+//    [data-dpr="1.5"] & {
+//        font-size: $x / 2 * 1.5px;
+//    }
+//    [data-dpr="2"] & {
+//        font-size: $x / 2 * 2px
+//    }
+//    [data-dpr="3"] & {
+//        font-size: $x / 2 * 3px
+//    }
+//}
 
 /*inline-box*/
 
 .inlineCon {
     font-size: 0!important;
     & > .inlineBox {
-        @include font(24);
+        font-size: f(24);
+        //        @include font(24);
         display: inline-block!important;
     }
 }
