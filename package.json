@@ -8,6 +8,7 @@
     "autoprefixer-loader": "^2.0.0",
     "css-loader": "^0.15.2",
     "dot": "^1.0.3",
+    "exports-loader": "^0.6.2",
     "extract-text-webpack-plugin": "^0.8.2",
     "file-loader": "^0.8.4",
     "fs": "^0.0.2",

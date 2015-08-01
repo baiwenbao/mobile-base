@@ -1,29 +1,31 @@
-[{
-    "name": "沪江cc猫",
-    "pic": "http://i2.hjfile.cn/f120/12/16/32501216.jpg?v=2015-07-14-18-58",
-    "getzan": "200",
-    "classname": "呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵",
-    "entertime": "2015年6月5日",
-    "days": "20",
-    "pass": "10%",
-    "notes": "28",
-    "outputzan": "17",
-    "homework": "100",
-    "learntime": "5:00-11:00",
-    "lessons": "9",
-    "correctrate": "80%"
+{
+    "data": [{
+        "name": "沪江cc猫",
+        "pic": "http://i2.hjfile.cn/f120/12/16/32501216.jpg?v=2015-07-14-18-58",
+        "getzan": "200",
+        "classname": "呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵",
+        "entertime": "2015年6月5日",
+        "days": "20",
+        "pass": "10%",
+        "notes": "28",
+        "outputzan": "17",
+        "homework": "100",
+        "learntime": "5:00-11:00",
+        "lessons": "9",
+        "correctrate": "80%"
 }, {
-    "name": "Alex",
-    "pic": "http://i2.hjfile.cn/f120/12/16/32501216.jpg?v=2015-07-14-18-58",
-    "getzan": "250",
-    "classname": "零基础直达",
-    "entertime": "2015年6月5日",
-    "days": "120",
-    "pass": "90%",
-    "notes": "28",
-    "outputzan": "17",
-    "homework": "100",
-    "learntime": "5:00-11:00",
-    "lessons": "29",
-    "correctrate": "100%"
+        "name": "Alex",
+        "pic": "http://i2.hjfile.cn/f120/12/16/32501216.jpg?v=2015-07-14-18-58",
+        "getzan": "250",
+        "classname": "零基础直达",
+        "entertime": "2015年6月5日",
+        "days": "120",
+        "pass": "90%",
+        "notes": "28",
+        "outputzan": "17",
+        "homework": "100",
+        "learntime": "5:00-11:00",
+        "lessons": "29",
+        "correctrate": "100%"
 }]
+}

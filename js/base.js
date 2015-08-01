@@ -2,7 +2,7 @@
     function setwidth() {
         var doc = document,
             win = window,
-            dpr = Math.min(win.devicePixelRatio, 3),
+            dpr = win.devicePixelRatio,
             scale = 1 / dpr,
             docEl = doc.documentElement,
             metaEl = docEl.querySelector('meta[name="viewport"]');

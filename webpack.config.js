@@ -13,7 +13,7 @@ module.exports = {
         inline: true
     },
     //    devtool: 'source-map',
-    entry: ['./node_modules/zepto/zepto.min.js', './entry.js'],
+    entry: ['./entry.js'],
     output: {
         path: './dist',
         publicPath: '/dist/',
@@ -32,7 +32,7 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg)$/,
-                loader: 'url-loader'
+                loader: 'url'
 			}
 		]
     },
