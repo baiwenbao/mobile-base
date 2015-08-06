@@ -30,8 +30,8 @@ body {
         width: f(385)
     }
     .username {
-        font-size: f(32);
-        //        @include font(32)
+        //        font-size: f(32);
+        @include font(32)
     }
     .icon－praise {
         width: f(26);
@@ -43,8 +43,8 @@ body {
         height: f(50);
         line-height: f(32);
         .text {
-            font-size: f(26);
-            //            @include font(26)
+            //            font-size: f(26);
+            @include font(26)
         }
     }
     .classname {
@@ -55,8 +55,8 @@ body {
         * {
             vertical-align: middle
         }
-        font-size: f(24);
-        //        @include font(24);
+        //        font-size: f(24);
+        @include font(24);
         .content {
             @extend %textoverflow;
             display: inline-block;
@@ -74,12 +74,12 @@ body {
         width: 50%;
         .upper {
             color: #68c04a;
-            font-size: f(26);
-            //            @include font(26);
+            //            font-size: f(26);
+            @include font(26);
         }
         .down {
-            font-size: f(22);
-            //            @include font(22);
+            //            font-size: f(22);
+            @include font(22);
             color: #c2c2c2;
             margin-top: f(20);
         }
@@ -120,14 +120,14 @@ body {
         border-bottom: none;
     }
     .upper {
-        font-size: f(28);
-        //        @include font(28);
+        //        font-size: f(28);
+        @include font(28);
         color: #68c04a;
     }
     .down {
         color: #c2c2c2;
-        font-size: f(22);
-        //        @include font(22);
+        //        font-size: f(22);
+        @include font(22);
         margin-top: f(20);
     }
     [class*=icon] {
@@ -156,16 +156,16 @@ body {
     background: #fff;
     .head {
         text-align: center;
-        font-size: f(32);
-        //        @include font(32);
+        //        font-size: f(32);
+        @include font(32);
         line-height: f(77);
         color: #fff;
     }
     box-shadow: 0 1px 2px #ddd;
     .foot {
         text-align: center;
-        font-size: f(22);
-        //        @include font(22);
+        //        font-size: f(22);
+        @include font(22);
         color: #a7a7a7;
         line-height: f(50);
         background: #fafafa;
@@ -190,15 +190,15 @@ body {
     .item {
         margin-bottom: f(36);
         label {
-            font-size: f(22);
-            //            @include font(22);
+            //            font-size: f(22);
+            @include font(22);
             color: #a7a7a7;
             margin-bottom: f(21);
             display: inline-block;
         }
         p {
-            font-size: f(42);
-            //            @include font(42);
+            //            font-size: f(42);
+            @include font(42);
             color: #ff7e00;
         }
     }
@@ -217,8 +217,8 @@ body {
     .name {
         margin-bottom: f(24);
         p {
-            font-size: f(26);
-            //            @include font(26);
+            //            font-size: f(26);
+            @include font(26);
             color: #494949;
         }
     }

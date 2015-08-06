@@ -1,23 +1,17 @@
 @function f($x) {
     @return $x / 40 * 1rem; //按640的设计稿，统一宽度16rem;
 }
-//@mixin font($x) {
-//    [data-dpr="1"] & {
-//        font-size: $x / 2 * 1px;
-//    }
-//    [data-dpr="1.25"] & {
-//        font-size: $x / 2 * 1.25px;
-//    }
-//    [data-dpr="1.5"] & {
-//        font-size: $x / 2 * 1.5px;
-//    }
-//    [data-dpr="2"] & {
-//        font-size: $x / 2 * 2px
-//    }
-//    [data-dpr="3"] & {
-//        font-size: $x / 2 * 3px
-//    }
-//}
+@mixin font($x) {
+    [data-dpr="1"] & {
+        font-size: $x / 2 * 1px;
+    }
+    [data-dpr="2"] & {
+        font-size: $x / 2 * 2px
+    }
+    [data-dpr="3"] & {
+        font-size: $x / 2 * 3px
+    }
+}
 
 /*inline-box*/
 
@@ -92,6 +86,8 @@ body {
     font-size: f(24);
     color: #545454;
     line-height: 1;
+    width: 16rem;
+    margin: 0 auto;
 }
 a {
     text-decoration: none;

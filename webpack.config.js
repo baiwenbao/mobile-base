@@ -7,6 +7,7 @@ var path = require('path'),
 
 module.exports = {
     devServer: {
+        host: "172.16.13.246",
         contentBase: "./",
         noInfo: true,
         hot: true,
