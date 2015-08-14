@@ -7,7 +7,7 @@ var path = require('path'),
 
 module.exports = {
     devServer: {
-        host: "172.16.13.246",
+        //        host: "172.16.13.246",
         contentBase: "./",
         noInfo: true,
         hot: true,
@@ -19,7 +19,6 @@ module.exports = {
         path: './dist',
         publicPath: '/dist/',
         filename: '[name].bundle.js'
-            //        chunkFilename: '[id]_[hash].js'
     },
     module: {
         loaders: [
@@ -45,9 +44,5 @@ module.exports = {
             }
         }),
 		new webpack.HotModuleReplacementPlugin()
-//        new ProvidePlugin({
-            //            '$': 'zepto'
-            //        })
-
 	]
 }
